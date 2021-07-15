@@ -1,0 +1,70 @@
+h3{
+    margin-left: 20px;
+    font-weight: 900;
+    font-family: 'Nunito', sans-serif;
+    padding-top: 20px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 80px;
+    .card{
+        width: 216px;
+        height: 356px;
+        text-align: center;
+        .thumbnail{
+            width: 216px;
+            height: 200px;
+            background-color: #000;
+        }
+        .description{
+            width: 216px;
+            height: 190px;
+            background-color: #E6E8EA;
+            .stars{
+                margin-left: 20%;
+                margin-bottom: 23px;
+            }
+            .product-name{
+                padding-top: 7px;
+                font-size: 12px;
+                font-weight: 600;
+                color:#7A7A7A;
+            }
+            button{
+                width: 125px;
+                height: 32px;
+                background-color: #000;
+                color: #fff;
+                border:none;
+                border-radius: 5px;
+                margin-top: 16px;
+                font-weight: 700;
+                font-family: 'Nunito', sans-serif;
+                text-transform: uppercase;
+                font-size: 12px;
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+        
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .scroll-top{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        .row{
+            display:  flex;
+            justify-content: space-between;
+            margin-top: 0;
+           .card{
+               height: auto;
+               margin-left: 20px;
+               margin-top: 14px;
+           }
+        }
+    }
+}
